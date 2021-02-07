@@ -27,5 +27,5 @@ Plot-LogSoftmax-gumbel-datasetA.ipynb: joint learning results in the scenario of
 Plot-LogSoftmax-gumbel-datasetB.ipynb: joint learning results in the scenario of multi-graph selection
 
 ## Conclusion
-Either in the scenario of single-graph selection or multi-graph selection, our proposed algorithm shows satisfactory classification and sampling accuracy.
+Either in the scenario of single-graph selection or multi-graph selection, our proposed algorithm shows satisfactory classification and sampling accuracy. For future work, we could figure out other permutation-invariant methods to aggregate sampled graphs to reduce information loss. Moreover，we can improve the sampling method to avoid selecting the same graph multiple times.
 
