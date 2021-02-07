@@ -1,7 +1,15 @@
 # stochastic-discrete-graph-neural-networks
+Yinan Zhang, Beril Besbinar
 
 ## Overview
 The code in this directory is implemented for my semester project "Multi-graph classifcation with discrete stochastic graph neural networks" at LTS4, EPFL. In this study, we are interested in classifying cancerous patients represented by a a bag of cell-graphs constructed from mIHC data. Yet, each multi-graph  bag not only contains discriminative graphs useful for classification, but also redundant graphs whose characteristics are shared among all or most entities in the dataset. In order to solve this problem, we propose an algorithm for jointly learning graph embedding and graph sampling. Our framework introduces stochastic layers with discrete random variables into traditional graph neural networks. Experiments results show that this algorithm is effective no matter one graph or multiple graphs need to be selected.
+
+## Dataset
+We create two synthetic datasets corresponding to the scenario of single-graph selection and multi-graph selection respectively.  
+An example from dataset A:
+![](gv1.png)
+An example from dataset B:
+![](gv2.png)
 
 ## Structure 
 Models:  
@@ -17,3 +25,7 @@ PatientClassification-joint.ipynb: jointly learning graph embedding and graph sa
 Plot-LogSoftmax-avg.ipynb, Plot-LogSoftmax-max.ipynb: pre-training results  
 Plot-LogSoftmax-gumbel-datasetA.ipynb: joint learning results in the scenario of single-graph selection  
 Plot-LogSoftmax-gumbel-datasetB.ipynb: joint learning results in the scenario of multi-graph selection
+
+## Conclusion
+Either in the scenario of single-graph selection or multi-graph selection, our proposed algorithm shows satisfactory classification and sampling accuracy.
+
